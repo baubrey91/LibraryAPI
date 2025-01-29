@@ -7,8 +7,24 @@
 
 import XCTest
 
-final class iOSTechTestUITests: XCTestCase {
 
+/// UITest is very simple run through of app. Lots of remove for improvement here
+
+final class iOSTechTestUITests: XCTestCase {
+    
+    var app: XCUIApplication!
+    
+    override func setUp() {
+        super.setUp()
+        app = XCUIApplication()
+        app.launch()
+    }
+    
+    override func tearDown() {
+        app = nil
+        super.tearDown()
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -37,5 +53,38 @@ final class iOSTechTestUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+    func testUIRunThrough() {
+        let searchField = app.searchFields["Search by subject"]
+        
+        // Check for search bar
+        XCTAssertTrue(searchField.waitForExistence(timeout: 5), "Search field should exist.")
+        
+        // Create Search
+        searchField.tap()
+        searchField.typeText("horror")
+        searchField.typeText("\n")
+        
+        // Check for results (This required network connections
+        let firstResult = app.staticTexts.element(boundBy: 0) // This assumes the list items are static text
+        
+        XCTAssertTrue(firstResult.exists, "First result should be visible.")
+        
+        // Click on first result
+        firstResult.tap()
+        let subTitle = app.staticTexts["Tap to see details..."]
+        
+        
+        // Check if we are in detail view
+        XCTAssertTrue(subTitle.waitForExistence(timeout: 5), "Should be in detail view")
+        
+        // Click on detail view
+        app.tap()
+        
+        
+        // Check if we are in details card
+        let detailCard = app.staticTexts["detailCardTitle"]
+        XCTAssertTrue(detailCard.waitForExistence(timeout: 5), "Should be in detail view")
     }
 }
