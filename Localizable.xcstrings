@@ -1,0 +1,33 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Fantasy" : {
+
+    },
+    "Fiction" : {
+
+    },
+    "Horror" : {
+
+    },
+    "Love" : {
+
+    },
+    "No books found" : {
+
+    },
+    "Nonfiction" : {
+
+    },
+    "Retry" : {
+
+    },
+    "Search by subject" : {
+
+    },
+    "Tap to see details..." : {
+
+    }
+  },
+  "version" : "1.0"
+}
