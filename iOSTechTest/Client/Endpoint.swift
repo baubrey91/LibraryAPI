@@ -44,7 +44,7 @@ enum Endpoint {
     var host: String {
         switch self {
         case .coverImage: "covers.openlibrary.org"
-        case .bookInfo, .search: "ope nlibrary.org"
+        case .bookInfo, .search: "openlibrary.org"
         }
     }
     
