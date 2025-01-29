@@ -1,0 +1,56 @@
+
+{
+  "covers": [
+    4871001,
+    4344490,
+    909847,
+    5734718,
+    11272844,
+    897384,
+    8585901,
+    12019175
+  ],
+  "first_publish_date": "1819",
+  "key": "/works/OL3625250W",
+  "authors": [
+    {
+      "author": {
+        "key": "/authors/OL617722A"
+      },
+      "type": {
+        "key": "/type/author_role"
+      }
+    }
+  ],
+  "subjects": [
+    "Fiction",
+    "Incest",
+    "Vampires",
+    "English Horror tales",
+    "Classic Literature",
+    "Horror",
+    "Short Stories",
+    "Fiction horror",
+    "Fiction ghost",
+    "English fiction",
+    "Vampire fiction"
+  ],
+  "title": "The Vampyre",
+  "type": {
+    "key": "/type/work"
+  },
+  "description": {
+    "type": "/type/text",
+    "value": "The Vampyre*, a short gothic novel by John William Polidori, was first published in 1819 and is considered the first modern vampire story. The story features Lord Ruthven, a seductive aristocrat with unnatural powers over men and women, and an insatiable thirst for blood. Polidori's innovative portrayal of the vampire as a Byronic figure is said to have set the template for the modern vampire."
+  },
+  "latest_revision": 20,
+  "revision": 20,
+  "created": {
+    "type": "/type/datetime",
+    "value": "2009-12-10T04:01:12.282501"
+  },
+  "last_modified": {
+    "type": "/type/datetime",
+    "value": "2025-01-15T16:53:10.100716"
+  }
+}
