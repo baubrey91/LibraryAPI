@@ -21,7 +21,8 @@ struct DetailCardViewModel {
     }
     
     var publishDateString: String {
-        "Publish Date: \(self.bookItem.firstPublishYear)"
+        let publishString = String(localized: "Publish Date", comment: "Publish Date")
+        return "\(publishString): \(self.bookItem.firstPublishYear)"
     }
     
     var descriptionString: String {
@@ -30,9 +31,11 @@ struct DetailCardViewModel {
     
     var authorsString: String {
         let authorsArray = self.bookItem.authors.map { $0.name }
-        let authorsString = authorsArray.joined(separator: ", ")
-        let prefixString = authorsArray.count > 1 ? "Authors: " : "Author: "
-        return prefixString + authorsString
+        let authorsNamesString = authorsArray.joined(separator: ", ")
+        let authorsString = String(localized: "Authors", comment: "Plural authors")
+        let authorString = String(localized: "Author", comment: "Singular author")
+        let prefixString = authorsArray.count > 1 ? "\(authorsString): " : "\(authorString): "
+        return prefixString + authorsNamesString
     }
     
     var descriptionFont: Font {

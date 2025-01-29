@@ -87,6 +87,6 @@ struct BookListStyler {
     let loadingText = "Loading..."
     let searchText = "Search by subject"
     let emptyText = "No books found"
-    let retry = "Retry"
+    let retry = String(localized: "Retry", comment: "Retry button text for api failure")
 }
 

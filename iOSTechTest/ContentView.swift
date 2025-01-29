@@ -27,5 +27,7 @@ import TechTestCore
     )
     let viewModel = DetailCardViewModel(bookItem: bookItem, bookInfo: bookInfo)
     DetailCardView(viewModel: viewModel)
+        .environment(\.locale, .init(identifier: "ja"))
 }
+
 

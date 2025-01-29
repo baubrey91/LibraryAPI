@@ -44,5 +44,5 @@ struct BookCoverStyler {
     let padding: CGFloat = 16
     let imageName = "book.fill"
     let notFoundText = "Cover Image Not Found"
-    let details = "Tap to see details..."
+    let details = String(localized: "Tap to see details...", comment: "See details")
 }
