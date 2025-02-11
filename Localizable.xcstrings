@@ -1,0 +1,96 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Author" : {
+      "comment" : "Singular author",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "著者"
+          }
+        }
+      }
+    },
+    "Authors" : {
+      "comment" : "Plural authors",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "著者"
+          }
+        }
+      }
+    },
+    "Fantasy" : {
+
+    },
+    "Fiction" : {
+
+    },
+    "Horror" : {
+
+    },
+    "Love" : {
+
+    },
+    "No books found" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本が見つかりませんでした"
+          }
+        }
+      }
+    },
+    "Nonfiction" : {
+
+    },
+    "Publish Date" : {
+      "comment" : "Publish Date",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "出版日"
+          }
+        }
+      }
+    },
+    "Retry" : {
+      "comment" : "Retry button text for api failure",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リトライ"
+          }
+        }
+      }
+    },
+    "Search by subject" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "件名で検索する"
+          }
+        }
+      }
+    },
+    "Tap to see details..." : {
+      "comment" : "See details",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タップすると詳細が表示されます"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
